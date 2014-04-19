@@ -39,8 +39,7 @@ Instead, we run `sbt` in a `screen` process and send commands to it, redirecting
 
 In your `init.el` or `.emacs`, setup a new checker:
 
-    ```elisp
-
+```elisp
     (flycheck-define-checker sbt
                          "Checker for compilation with SBT"
                          :command ("PATHTO/sbtout/sbtout.sh") ;;<- SET THIS TO YOUR PATH
@@ -48,7 +47,7 @@ In your `init.el` or `.emacs`, setup a new checker:
                          ((error line-start "[error] " (file-name) ":" line ": " (message) line-end))
                          :modes scala-mode)
 
-    ```
+```
     
 Be sure to set the right path to the executable.
 
