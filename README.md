@@ -4,7 +4,7 @@ This is a work in progress to run compilation tasks in SBT non interactively and
 
 It's mostly a hack to get [`flycheck-mode`](http://flycheck.readthedocs.org/) in emacs to highlight errors of compilation and not just of syntax. It would probably work well with other editors such as vi or sublime I guess.
 
-
+![missing import example](https://raw.githubusercontent.com/Mortimerp9/sbtout/master/screenshots/screenshot1.png)
 
 ##why not ensime
 
@@ -54,6 +54,8 @@ Be sure to set the right path to the executable.
 
 In your scala buffer, start `flycheck-mode`, then run `flycheck-select-checker` and enter `sbt`. Next time flycheck will run, it will use your project sbt process to check for errors.
 You can also get it to run a compilation with `flycheck-compile`.
+
+![type error](https://raw.githubusercontent.com/Mortimerp9/sbtout/master/screenshots/screenshot2.png)
 
 #Work In Progress
 
