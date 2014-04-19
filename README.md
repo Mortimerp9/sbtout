@@ -34,6 +34,7 @@ Instead, we run `sbt` in a `screen` process and send commands to it, redirecting
      
    This will send a `compile` command to sbt and output to stdout the compilation errors (or a success message) from sbt.
    
+When you are finished, make sure to kill the sbt running in screen.
 
 #Integration with FlyCheck
 
@@ -59,3 +60,5 @@ You can also get it to run a compilation with `flycheck-compile`.
 #Work In Progress
 
 This works fine for me, but clearly, it's a bit of a hack and requires some manual work. You should be careful as the scripts use some hardcoded output files:  `/tmp/sbtout` and `/tmp/sbtlastcnt` to store the sbt errors and some state. If you are going to work on different projects at the same time, this might be an issue.
+
+Hopefuly, this will evolve in a simpler extension to flycheck and, if any `vi` users want to contribute to get it to work with it, it would be great!
