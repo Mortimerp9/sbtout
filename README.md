@@ -1,4 +1,4 @@
-#Running SBT as a "service"
+# Using SBT as a backend for error checking in Emacs, Vi, Sublime Text
 
 This is a work in progress to run compilation tasks in SBT non interactively and to get a meaningul output from it.
 You can see it as running sbt as a local server, or as a service or whatever you want to call it.
